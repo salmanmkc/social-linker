@@ -3,7 +3,9 @@
 const tracking = {
   addTracking: (url, event, channel, alias) => {
     let baseUrl = url || '';
-    if (baseUrl === '') return;
+    if (baseUrl === '') {
+      return
+    };
 
     const defaultDomains = [
       /(.*\.)?microsoft\.com$/,
